@@ -11,6 +11,15 @@ body {
     grid-auto-rows: auto 1fr auto;
 }
 
+header .course-title {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 20px 0 10px 0;
+    color: yellow;
+}
+
 header {
     background-color: #646764;
     color: white;
