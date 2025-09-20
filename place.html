@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"  content="Country page">
+    <meta name="author" content="Geoffrey Etu">
+    <title>Country Page - Ghana</title>
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Ghana 🇬🇭</h1>
+  </header>
+
+  <main>
+    <!-- Hero section with responsive image -->
+    <section class="hero">
+      <picture>
+        <source srcset="images/hero-monkey-large.webp" media="(min-width: 800px)">
+        <source srcset="images/hero-monkey-large.webp" media="(min-width: 500px)">
+        <img src="images/hero-monkey-small.webp" alt="Scenic view of Ghana" width="400" height="600">
+      </picture>
+    </section>
+    <section class="data">
+        <div>
+            <h2>Data</h2>
+            <p>Area: <span id="area">238,533 </span> km²</p>
+            <p>Population: <span id="population">34.34</span> million</p>
+            <p>Capital: <span id="capital">Accra</span></p>
+            <p>Language: <span id="language">English, Twi</span></p>
+            <p>Currency: <span id="currency">Cedi</span></p>
+            <p>Time Zone: <span id="time-zone">GMT</span></p>
+            <p>Calling code: <span id="calling-code">+233</span></p>
+            <p>Internet TLD: <span id="internet-tld">.gh</span></p>
+        </div>
+        
+    </section>
+
+    <!-- Weather section -->
+    <section class="weather">
+      <div>  
+        <h2>Weather <span class="weather-icon"></span></h2>
+        <img src="images/weather.svg" alt="weather-icon">
+        <p>Temperature: <span id="temperature">28</span> °C</p>
+        <p>Wind Speed: <span id="wind">12</span> km/h</p>
+        <p>Wind Chill: <span id="windchill">N/A</span></p>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <p>©️<span id="currentyear"></span>🌴Geoffrey Etu🌴Ghana</p>
+    <p><span id="lastModified"></span></p>
+  </footer>
+</body>
+</html>

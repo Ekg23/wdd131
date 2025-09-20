@@ -1,0 +1,122 @@
+:root {
+  --primary-color: #006b3f;
+  --secondary-color: #fcd116;
+  --accent-color: #ce1126;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  background: #f9f9f9;
+  color: #333;
+  text-align: center;
+  height: auto;
+}
+
+header {
+  background: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  align-items: center;
+  border-bottom: 20px solid red;
+}
+header h1 {
+  margin: 0 auto;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.data, .weather {
+    border: 2px solid #eee;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0;
+  
+}
+
+.weather div img {
+    height: 128px;
+    
+}
+
+.weather p, .data p {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    span {
+        font-weight: normal;
+    }
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  margin-top: 0;
+  color: #f9f9f9;
+}
+
+@media (min-width: 800px) {
+  body {
+    font-size: 18px;
+  }
+
+  main {
+    position: relative;
+  }
+
+   .data div {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        padding-top: 45px;
+        height: 250px;
+        width: 200px;
+        background-color: rgba(255, 255, 255, 0.8);
+        font-size: small;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .weather div {
+        position: absolute;
+        bottom: 20px;
+        right: 10px;
+        padding: 1rem;
+        padding-top: 50px;
+        height: 100px;
+        width: 200px;
+        background-color: rgba(255, 255, 255, 0.8);
+        font-size: small;
+        text-align: center;
+        border-radius: 8px;
+        
+    }
+
+    .weather img {
+        display: none;
+    }
+
+    .weather h2::after {
+  content: " ⛅"; /* pseudo-element icon */
+    }
+
+    h2 {
+        background-color: yellow;
+        position: absolute;
+        left: -10px;
+        top: -10px;
+        padding: 10px 100px 10px 20px;
+    }
+
+    .weather p, .data p {
+        margin-top: 10px;
+        font-weight: bold;
+    }
+    span {
+        font-weight: normal;
+    }
+}
