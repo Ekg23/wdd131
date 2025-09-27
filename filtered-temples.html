@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1">  
+    <meta name="author" content="Geoffrey Etu">
+    <meta name="description" content="A simple album of temples">
+    <title>Picture Album</title>
+    <link rel="stylesheet" href="styles/filtered-temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/filtered-temples.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Temple Album</h1>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu"></button>
+      <nav id="navMenu">
+        <ul>
+          <li><a href="#" id="home">Home</a></li>
+          <li><a href="#" id="old">Old</a></li>
+          <li><a href="#" id="new">New</a></li>
+          <li><a href="#" id="large">Large</a></li>
+          <li><a href="#" id="small">Small</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2 id="section-title">Home</h2>
+      <section class="gallery">
+      </section>
+     </main>
+    <footer> 
+        <p>©️<span id="currentyear"></span>🌴Geoffrey Etu🌴Ghana</p>
+        <p><span id="lastModified"></span></p>
+    </footer>    
+  </body>
+</html>

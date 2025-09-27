@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+header {
+  background-color: blue;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding-bottom: 20px;
+}
+
+main .gallery {
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 1rem;
+ 
+
+}
+h2 {
+  margin: 2px auto;
+  text-align: center;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+  margin-top: 10px;
+  gap: 1rem;
+  
+
+}
+
+nav ul li a{
+  color: #fff;
+  text-decoration: none;
+
+  
+}
+
+nav ul li a:hover{
+  color: black;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+}
+
+
+
+footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+
+.gallery section {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  overflow: hidden;
+  height: 400px;
+  width: 300px;
+}
+
+.gallery section img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+
+
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+
+@media screen and (max-width: 640px){
+  main .gallery{
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    max-width: 100%;            
+    width: 100%;                
+    margin: 0 auto;             
+    padding: 10px;
+  }
+  
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 1rem;
+  }
+
+  .hamburger::before {
+    content: "☰";
+  }
+
+  .hamburger.open::before {
+	  content: "❎";
+  }
+  
+  nav {
+    display: none;
+    width: 100%;
+    background-color: blue;
+    transition: all 0.3s ease;
+  }
+  
+  nav.active {
+    display: block;
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  nav ul li {
+    padding: 1rem;
+    text-align: center;
+    border-top: 1px solid white;
+  }
+  
+  nav ul li a {
+    padding: 0.5rem 0;
+    display: block;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
