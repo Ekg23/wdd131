@@ -1,0 +1,50 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #F5F5DC;
+  color: #333;
+  margin: 0;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #003366;
+}
+
+header img {
+  max-width: 150px;
+  display: block;
+  margin: 10px 0;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+ul {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+section ul .font1 {
+  font-family: 'Playfair Display', serif;
+}
+
+section ul .font2 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  header img {
+    max-width: 100px;
+  }
+  .wireframe img {
+    width: 100%;
+    height: auto;
+  }
+}
